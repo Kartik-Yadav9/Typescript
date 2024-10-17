@@ -111,4 +111,35 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//-----------------------------------object-------------------------------------------------
+
+let obj1:{
+    name:string;
+    num?:number            //optional chaining, means passing num is optional(?)
+}= {
+    name:'kartik'
+}
+
+console.log(obj1.name);
+
+
+
+
+
+
+
 export default {}

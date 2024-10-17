@@ -35,4 +35,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //declare type inside object, in array
 // let inobj: {name:string, age:number}[]= [{name:"Kartik", age: 25}, {name:"Iswar", age: 14}]
 // console.log(inobj[1].age);
+//-----------------------------------object-------------------------------------------------
+var obj1 = {
+    name: 'kartik'
+};
+console.log(obj1.name);
 exports.default = {};
