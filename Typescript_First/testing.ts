@@ -44,12 +44,13 @@
 
 //--------------------------------------------------ANY-------------------------------------------------------------
 
-// function anyKeyword(){
+// function anyKeyword():any{
 //     return "hi"
 // }
 
 // let ans =anyKeyword()
 // console.log(ans);
+
 
 
 
@@ -127,19 +128,69 @@
 
 //-----------------------------------object-------------------------------------------------
 
-let obj1:{
-    name:string;
-    num?:number            //optional chaining, means passing num is optional(?)
-}= {
-    name:'kartik'
+// let obj1:{
+//     name:string;
+//     num?:number            //optional chaining, means passing num is optional(?)
+// }= {
+//     name:'kartik'
+// }
+
+// console.log(obj1.name);
+
+
+
+
+
+
+
+// export default {}
+
+
+
+
+
+
+
+
+//------------------------------------------------------Interface------------------------------------------------
+
+
+ interface student {
+    fname: string,
+    age? : number,                // ?...it means it is not important to call  or not
+    readonly lname: string        // readonly, property cannot be chnged
+    myfun:()=> number
 }
 
-console.log(obj1.name);
+
+//---Re-opening of interface
+
+interface student{
+    year: number     //it means i can use it below
+}
 
 
 
+ {
+    let kartik: student= {
+        fname: "Kartik",
+        lname: "yadav",
+        year: 5,
+        myfun: function(){                    //can also be done as...()=>{}
+            return 1111
+        }
+    }
+
+    kartik.fname= "Nalin"
+    // kartik.lname= "singh"         //readonly wont allow to change
 
 
+    console.log(kartik.fname);
+    console.log(kartik.myfun());
+    console.log(kartik.year);
+    
+    
+ }
 
-
-export default {}
+ 
+ 
